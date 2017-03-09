@@ -47,6 +47,12 @@
         <!-- https://oss.sonatype.org/content/repositories/snapshots/net/md-5/bungeecord-api/ -->
         <massiveBungeeCordApiVersion>1.11-SNAPSHOT</massiveBungeeCordApiVersion>
 
+        <!-- http://central.maven.org/maven2/com/google/code/gson/gson/ -->
+        <massiveGsonVersion>2.8.0</massiveGsonVersion>
+
+        <!-- http://central.maven.org/maven2/org/mongodb/mongo-java-driver/ -->
+        <massiveMongoDBVersion>3.4.2</massiveMongoDBVersion>
+
         <!-- http://nexus.hc.to/content/repositories/pub_releases/net/milkbowl/vault/Vault/ -->
         <massiveVaultVersion>1.5.6</massiveVaultVersion>
 
@@ -255,6 +261,16 @@
                 <artifactId>bungeecord-api</artifactId>
                 <version>${massiveBungeeCordApiVersion}</version>
                 <scope>provided</scope>
+            </dependency>
+            <dependency>
+                <groupId>com.google.code.gson</groupId>
+                <artifactId>gson</artifactId>
+                <version>${massiveGsonVersion}</version>
+            </dependency>
+            <dependency>
+                <groupId>org.mongodb</groupId>
+                <artifactId>mongo-java-driver</artifactId>
+                <version>${massiveMongoDBVersion}</version>
             </dependency>
             <dependency>
                 <groupId>net.milkbowl.vault</groupId>
